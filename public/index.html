@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./css/index.css">
+    <link rel="stylesheet" href="https://unpkg.com/mvp.css">
+    <title>Index</title>
+</head>
+
+<body>
+    <a href="/static/index.html" download="index.html">
+        <h1>Hello public index.html download file</h1>
+    </a>
+    <div>
+        <button id="showForm">카드 만들기</button>
+    </div>
+    <div>
+        <form action="/create" method="get" id="inputForm">
+            <input type="text" name="name"  placeholder="name">
+            <input type="text" name="job"  placeholder="job">
+            <button id="submitInput">CREATE</button>
+        </form>
+    </div>
+    <div class="card-container">
+        <div class="card">
+            <a href="color.html"><img src="./img/img_avatar1.jpg" alt="Avatar" style="width:100%"></a>
+            <div class="container">
+                <h4><b>John Doe</b></h4>
+                <p>Architect & Engineer</p>
+            </div>
+        </div>
+        <div>
+        <div class="card">
+            <img src="./img/img_avatar2.jpg" alt="Avatar" style="width:100%">
+            <div class="container">
+                <h4><b>Jane Doe</b></h4>
+                <p>AInterior Designer</p>
+            </div>
+        </div>
+    </div>
+
+    <script src="./js/index.js"></script>
+</body>
+
+</html>

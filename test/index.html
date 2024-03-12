@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>pika</title>
+
+</head>
+<body>
+    <div class="container">
+        <div class="card"></div>
+    </div>
+
+    <script>
+        var container = document.querySelector('.container')
+        container.addEventListener('mousemove', function(e) {
+            var x = e.offsetX;
+            var y = e.offsetY;  
+            console.log(x,y);
+            var rotateY = 1/-5 * x + 20
+            container.style = `transform : rotateY(${rotateY}deg)`
+        })
+    </script>
+
+
+    <style>
+        .container {
+            width: 220px; height: 310px; transition : all 0.1s;
+        }
+        .card {
+            width: 220px; height: 310px;
+            background-image: url(/static/img/pika.jpg);
+            background-size: cover;
+        }
+    </style>
+    
+</body>
+</html>

@@ -1,0 +1,40 @@
+a {
+    text-decoration-color: beige;
+    color:black;
+    text-align: center;
+}
+
+.container {
+
+}
+
+#inputForm {
+    display: none;
+}
+
+.card-container {
+    display: flex; /* 카드들을 가로로 배열 */
+    flex-wrap: wrap; /* 줄 바꿈 처리 */
+}
+
+.card {
+    /* Add shadows to create the "card" effect */
+    box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+    transition: 0.3s;
+    border-radius: 5px; /* 5px rounded corners */
+    width: 25%;
+    margin: 10px; /* 카드 사이에 간격 설정 */
+    flex: 0 0 calc(25.00% - 20px); /* 한 줄에 3개의 카드를 표시하기 위한 너비 설정 */
+    
+  }
+  
+  /* On mouse-over, add a deeper shadow */
+  .card:hover {
+    box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2);
+  }
+  
+  /* Add some padding inside the card container */
+  .container {
+    padding: 2px 16px;
+  }
+  

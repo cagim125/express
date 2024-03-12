@@ -1,0 +1,12 @@
+[
+  {
+    "userName": "Color Test",
+    "linkName": "/color",
+    "image": "/static/img/img_avatar4.jpg"
+  },
+  {
+    "userName": "lotto test",
+    "linkName": "/lotto",
+    "image": "/static/img/img_avatar5.jpg"
+  }
+]

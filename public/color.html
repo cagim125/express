@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="/static/css/card.css">
+  <title>Document</title>
+</head>
+
+<body>
+
+<h1 style="text-align: center;">RGBA(RED, GREEN, BLUE, ALPHA)</h1>
+<p style="text-align: center;">The alpha parameter is a number between 0.0 (fully transparent) and 1.0 (not transparent at all):</p>
+
+<div class="container">
+  <div id="rgbaresult">
+    <p id="rgbaresulttext">rgba(0, 150, 81, 0.5)</p>
+  </div>
+</div>
+
+<div class="container">
+  <div class="input-group">
+    <p>RED</p>
+    <input type="range" id="slideRed" name="slideRed" value="255" min="0" max="255" oninput="UpdateRgbValue()"
+           onchange="UpdateRgbValue()">
+    <div id="valRed" style="color:rgba(18, 17, 20, 0.747);opacity:1">254</div>
+  </div>
+
+  <div class="input-group">
+    <p>Green</p>
+    <input type="range" id="slideGreen" name="slideGreen" value="255" min="0" max="255" oninput="UpdateRgbValue()"
+           onchange="UpdateRgbValue()">
+    <div id="valGreen" style="color:rgba(18, 17, 20, 0.747);opacity:1">254</div>
+  </div>
+
+  <div class="input-group">
+    <p>BLUE</p>
+    <input type="range" id="slideBlue" name="slideBlue" value="255" min="0" max="255" oninput="UpdateRgbValue()"
+           onchange="UpdateRgbValue()">
+    <div id="valBlue" style="color:rgba(18, 17, 20, 0.747);opacity:1">255</div>
+  </div>
+
+  <div class="input-group">
+    <p>ALPHA</p>
+    <input type="range" id="alpha" name="alpha" value="5" min="0" max="10" oninput="UpdateRgbValue()"
+           onchange="UpdateRgbValue()">
+    <div id="valAlpha" style="color:rgba(18, 17, 20, 0.747);opacity:1">0.5</div>
+  </div>
+</div>
+
+
+<script>
+  function UpdateRgbValue() {
+
+      var redValue = document.getElementById('slideRed').value
+      var greenValue = document.getElementById('slideGreen').value
+      var blueValue = document.getElementById('slideBlue').value
+      var alphaValue = document.getElementById('alpha').value
+
+      alphaValue = alphaValue / 10;
+
+      var displayRed = document.getElementById('valRed');
+      displayRed.innerText = redValue;
+      var displayGreen = document.getElementById('valGreen');
+      displayGreen.innerText = greenValue;
+      var displayBlue = document.getElementById('valBlue');
+      displayBlue.innerText = blueValue;
+      var displayAlpha = document.getElementById('valAlpha');
+      displayAlpha.innerText = alphaValue;
+
+
+      var rgbaResult = document.getElementById('rgbaresult');
+
+      rgbaResult.style.backgroundColor = "rgba(" + redValue + "," + greenValue + "," + blueValue + "," + alphaValue + ")";
+
+      var rgbaResultText = document.getElementById('rgbaresulttext');
+
+      rgbaResultText.innerText = "rgba(" + redValue + "," + greenValue + "," + blueValue + "," + alphaValue + ")";
+  }
+
+
+</script>
+</body>
+
+</html>
