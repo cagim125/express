@@ -91,6 +91,11 @@ app.get('/create', (req, res) => {
     res.redirect(301, '/');
 });
 
+app.get('/stopwatch', (req, res) => {
+    const filePath = path.join(__dirname, 'public', 'stopwatch.html');
+    res.sendFile(filePath);
+})
+
 app.listen(port, () => {
     console.log(`Example app listening on port ${port}`);
 });

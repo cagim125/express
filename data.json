@@ -1,12 +1,1 @@
-[
-  {
-    "userName": "Color Test",
-    "linkName": "/color",
-    "image": "/static/img/img_avatar4.jpg"
-  },
-  {
-    "userName": "lotto test",
-    "linkName": "/lotto",
-    "image": "/static/img/img_avatar5.jpg"
-  }
-]
+[{"userName":"Color Test","linkName":"/color","image":"/static/img/img_avatar4.jpg"},{"userName":"lotto test","linkName":"/lotto","image":"/static/img/img_avatar5.jpg"},{"userName":"stopwatch test","linkName":"/stopwatch","image":"/static/img/img_avatar6.jpg"}]
