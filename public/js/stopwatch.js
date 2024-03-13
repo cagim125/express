@@ -1,18 +1,26 @@
 const screen = document.getElementById('screen')
 const toggleButton = document.getElementById('button')
+const resetButton = document.getElementById('reset')
 let timeInterval
 let stopWatchOn = false
 let seconds = 0
 
+resetButton.addEventListener('click', () => {
+    toggleButton.innerHTML = '▶'
+    toggleButton.style.backgroundColor = 'steelblue'
+    clearInterval(timeInterval)
+    seconds = 0;
+    screen.innerHTML = `00:00:00`
+})
+
 toggleButton.addEventListener('click', () => {
   stopWatchOn = !stopWatchOn
-  toggleButton.innerHTML = stopWatchOn ? '■' : '▶'
+  toggleButton.innerHTML = stopWatchOn ? '=' : '▶'
   toggleButton.style.backgroundColor
     = stopWatchOn ? 'tomato' : 'steelblue'
   if (!stopWatchOn) {
     clearInterval(timeInterval)
-    seconds = 0
-    screen.innerHTML = '00:00:00'
+    screen.innerHTML = `${mm}:${ss}:${cs}`
   } else {
     timeInterval = setInterval(() => {
       seconds++
