@@ -6,13 +6,12 @@ const fs = require('fs');
 const path = require('path');
 const { url } = require('inspector');
 const app = express();
-const port = 3000;
+const port = 3001;
 
 app.use('/static', express.static('public'));
 
 
 const dataFilePath = path.join(__dirname, 'data.json');
-
 
 function getCardsFromStorage() {
     try{
