@@ -1,0 +1,57 @@
+@import url('https://fonts.googleapis.com/css2?family=Ramaraja&family=Risque&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Caprasimo&family=Ramaraja&family=Risque&display=swap');
+
+body {
+  font-family: "Caprasimo", serif;
+  font-weight: 400;
+  font-style: normal;
+  margin: 0;
+  /* background-image: url(../img/elephants-2757831_1280.png); */
+  background-color: white;
+  background-size: cover;
+  background-position: right;
+  
+}
+
+.header-container {
+  padding: 10px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.header-item{
+  display: flex;
+  list-style: none;
+  justify-content: space-between;
+  align-items: center;
+  margin-top: 30px;
+}
+.item {
+  cursor: pointer;
+}
+.item a {
+  margin-right: 30px;
+  text-decoration: none;
+  font-size: 16px; 
+  color: seagreen;
+  text-transform: uppercase;
+  
+}
+.item:nth-child(1) {
+  font-size: 20px;
+  margin-right: 50px;
+}
+
+
+@media (max-width: 800px) {
+  .item a {
+    margin-right: 20px;
+  }
+}
+
+@media (max-width: 600px) {
+  .item a {
+    margin-right: 5px;
+  }
+}

@@ -2,46 +2,109 @@
 <html lang="ko">
 
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="./css/index.css">
-    <link rel="stylesheet" href="https://unpkg.com/mvp.css">
-    <title>Index</title>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Profile</title>
+
+  <script src="https://code.jquery.com/jquery-3.7.1.min.js"
+    integrity="sha256-/JqT3SQfawRcv/BIHPThkBvs0OEvtFFmqPF/lYI/Cxo=" crossorigin="anonymous"></script>
+  <!-- Font Awesome CSS -->
+  <script src="https://kit.fontawesome.com/8983eb0fd8.js" crossorigin="anonymous"></script>
+  <link rel="stylesheet" href="../static/css/profile.css">
+  <script>
+    $(document).ready(function () {
+      $("#header").load("../static/header.html");
+    })
+  </script>
 </head>
 
 <body>
-    <a href="/static/index.html" download="index.html">
-        <h1>Hello public index.html download file</h1>
-    </a>
-    <div>
-        <button id="showForm">카드 만들기</button>
-    </div>
-    <div>
-        <form action="/create" method="get" id="inputForm">
-            <input type="text" name="name"  placeholder="name">
-            <input type="text" name="job"  placeholder="job">
-            <button id="submitInput">CREATE</button>
-        </form>
-    </div>
-    <div class="card-container">
-        <div class="card">
-            <a href="color.html"><img src="./img/img_avatar1.jpg" alt="Avatar" style="width:100%"></a>
-            <div class="container">
-                <h4><b>John Doe</b></h4>
-                <p>Architect & Engineer</p>
-            </div>
+  <header>
+    <div id="header"></div>
+  </header>
+  <div class="container">
+    <div class="card">
+      <img src="../static/img/watercolor.jpg" alt="color">
+      <div id="color" class="content">
+        <a href="/color">
+          <h2>Color <span>Developer</span></h2>
+          <p>
+            Lorem ipsum dolor, sit amet consectetur adipisicing elit. Libero et id optio voluptates, explicabo pariatur.
+          </p>
+        </a>
+        <div class="sns">
+          <a href="../static/color.html"><i class="fa fa-facebook"></i></a>
+          <a href="#none"><i class="fa fa-twitter"></i></a>
+          <a href="#none"><i class="fa fa-instagram"></i></a>
         </div>
-        <div>
-        <div class="card">
-            <img src="./img/img_avatar2.jpg" alt="Avatar" style="width:100%">
-            <div class="container">
-                <h4><b>Jane Doe</b></h4>
-                <p>AInterior Designer</p>
-            </div>
+      </div>
+    </div>
+    <div class="card">
+      <img src="../static/img/alphabet-word-images.png" alt="color">
+      <div id="lotto" class="content">
+        <a href="/lotto">
+          <h2>Lotto<span>Developer</span></h2>
+          <p>
+            Lorem ipsum dolor, sit amet consectetur adipisicing elit. Libero et id optio voluptates, explicabo pariatur.
+          </p>
+        </a>
+        <div class="sns">
+          <a href="#none"><i class="fa fa-facebook"></i></a>
+          <a href="#none"><i class="fa fa-twitter"></i></a>
+          <a href="#none"><i class="fa fa-instagram"></i></a>
         </div>
+      </div>
+    </div>
+    <div class="card">
+      <img src="../static/img/clock.png" alt="color">
+      <div id="watch" class="content">
+        <a href="../static/stopwatch.html">
+          <h2>TimeStamp <span>Developer</span></h2>
+          <p>
+            Lorem ipsum dolor, sit amet consectetur adipisicing elit. Libero et id optio voluptates, explicabo pariatur.
+          </p>
+        </a>
+        <div class="sns">
+          <a href="#none"><i class="fa fa-facebook"></i></a>
+          <a href="#none"><i class="fa fa-twitter"></i></a>
+          <a href="#none"><i class="fa fa-instagram"></i></a>
+        </div>
+      </div>
+    </div>
+    <div class="card">
+      <img src="../static/img/kids.png" alt="color">
+      <div id="kids" class="content">
+        <a href="#">
+          <h2>kids <span>people</span></h2>
+          <p>
+            Lorem ipsum dolor, sit amet consectetur adipisicing elit. Libero et id optio voluptates, explicabo pariatur.
+          </p>
+        </a>
+        <div class="sns">
+          <a href="#none"><i class="fa fa-facebook"></i></a>
+          <a href="#none"><i class="fa fa-twitter"></i></a>
+          <a href="#none"><i class="fa fa-instagram"></i></a>
+        </div>
+      </div>
+    </div>
+    <div class="card">
+      <img src="../static/img/muslim.png" alt="color">
+      <div id="other" class="content">
+        <a href="#">
+          <h2>Hi <span>Enginner</span></h2>
+          <p>
+            Lorem ipsum dolor, sit amet consectetur adipisicing elit. Libero et id optio voluptates, explicabo pariatur.
+          </p>
+        </a>
+        <div class="sns">
+          <a href="#none"><i class="fa fa-facebook"></i></a>
+          <a href="#none"><i class="fa fa-twitter"></i></a>
+          <a href="#none"><i class="fa fa-instagram"></i></a>
+        </div>
+      </div>
     </div>
 
-    <script src="./js/index.js"></script>
+  </div>
 </body>
 
 </html>

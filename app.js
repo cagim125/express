@@ -9,7 +9,7 @@ const app = express();
 const port = 3000;
 
 app.use('/static', express.static('public'));
-app.use('/test', express.static('test'));
+
 
 const dataFilePath = path.join(__dirname, 'data.json');
 
@@ -26,21 +26,27 @@ function getCardsFromStorage() {
 }
 
 app.get('/', (req, res) => {   
-    const cards = getCardsFromStorage();
+    // const cards = getCardsFromStorage();
     
-    let html = '';
-    // console.log(cards[0].userName);
+    // let html = '';
+    // // console.log(cards[0].userName);
     
-    for (let i = 0; i < cards.length; i++) {
-        // 현재 카드 HTML 생성
-        var card = template.card(cards[i].image, cards[i].userName, cards[i].linkName);
-        // 현재 카드를 html에 추가
-        html += card;
-    }
-    // 전체 HTML 생성 및 템플릿에 삽입
-    const fullhtml = template.html(html);
+    // for (let i = 0; i < cards.length; i++) {
+    //     // 현재 카드 HTML 생성
+    //     var card = template.card(cards[i].image, cards[i].userName, cards[i].linkName);
+    //     // 현재 카드를 html에 추가
+    //     html += card;
+    // }
+    // // 전체 HTML 생성 및 템플릿에 삽입
+    // const fullhtml = template.html(html);
 
-    res.send(fullhtml);
+    // console.log(path.join(__dirname, 'public/index.html'));
+
+    const viewFile = path.join(__dirname, 'public/index.html');
+
+    // console.log(viewFile);
+
+    res.sendfile(viewFile);
 });
 
 function addCardToStorage(userData) {
@@ -57,6 +63,20 @@ function addCardToStorage(userData) {
 
 app.get('/color', (req, res) => {
     const filePath = path.join(__dirname, 'public', 'color.html')
+    res.sendFile(filePath);
+})
+
+app.get('/docs', (req, res) => {
+    const filePath = path.join(__dirname, 'public/docs.html')
+    res.sendFile(filePath);
+})
+
+app.get('/about-section', (req, res) => {
+    const filePath = path.join(__dirname, 'public/about-section.html')
+    res.sendFile(filePath);
+})
+app.get('/login', (req, res) => {
+    const filePath = path.join(__dirname, 'public/login.html')
     res.sendFile(filePath);
 })
 

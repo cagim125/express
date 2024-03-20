@@ -25,6 +25,7 @@ a {
     width: 25%;
     margin: 10px; /* 카드 사이에 간격 설정 */
     flex: 0 0 calc(25.00% - 20px); /* 한 줄에 3개의 카드를 표시하기 위한 너비 설정 */
+    flex-direction: row;
     
   }
   

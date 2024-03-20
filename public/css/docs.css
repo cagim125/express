@@ -1,0 +1,33 @@
+body {
+  font-family: "cera-round-pro", "Helvetica Neue", Helvetica, Arial, sans-serif;
+  margin: 0;
+  background-image: url(https://fontawesome.com/images/icons-gray-bg.svg);
+}
+
+.wrap {
+  
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.wrap-item{
+  /* background-color: red; */
+  /* border: 3px solid black; */
+  width: 600px;
+  height: 400px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.wrap-item h1 {
+  text-align: center;
+  
+}
+
+img {
+  border-radius: 55% 45% 55% 65%;
+  width: 400px
+}
+

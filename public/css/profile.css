@@ -1,0 +1,141 @@
+body {
+  /* background-image: url(https://fontawesome.com/images/icons-gray-bg.svg); */
+  /* font-family: "cera-round-pro", "Helvetica Neue", Helvetica, Arial, sans-serif; */
+  margin: 0;
+  /* background-image: url(../img/elephants-2757831_1280.png); */
+  background-color: white;
+  background-size: cover;
+  background-position: right;
+  
+}
+
+.container {
+  /* background-image: url(https://fontawesome.com/images/icons-gray-bg.svg);
+  background-size: cover;
+  background-repeat: no-repeat; */
+  /* height: 400px; */
+}
+
+header {
+  /* background-color: tomato; */
+  width: 100%;
+  height: 100px;
+}
+
+.header-container {
+  padding: 10px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.header-item{
+  display: flex;
+  list-style: none;
+  justify-content: space-between;
+  align-items: center;
+  margin-top: 30px;
+}
+.item {
+  cursor: pointer;
+}
+.item a {
+  margin-right: 30px;
+  text-decoration: none;
+  font-size: 16px; 
+  color: seagreen;
+  text-transform: uppercase;
+  
+}
+.item:nth-child(1) {
+  font-size: 20px;
+  margin-right: 50px;
+}
+
+.container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  /* align-items: stretch; */
+  flex-wrap: wrap;
+  height: 30%;
+}
+
+.card {
+  margin: 5px;
+  position: relative;
+  width: 230px;
+  height: 350px;
+  overflow: hidden;
+  transition: 0.5s ease;
+  border-radius: 30% 45% 25% 55%;
+}
+
+.card:hover {
+  transform: translateY(-20px);
+  box-shadow: 0 10px 20px #000;
+
+  .content {
+    top: 0;
+  }
+}
+
+.content {
+  width: inherit;
+  height: inherit;
+  position: absolute;
+  top: 75%;
+  left: 0;
+  padding: 20px;
+  background: linear-gradient(to top,
+      crimson, transparent);
+  color: #fff;
+  text-align: center;
+  padding-top: 80px;
+  box-sizing: border-box;
+  transition: 0.5s;
+}
+
+.content a {
+  text-decoration: none;
+  color: #fff;
+}
+
+#lotto {
+  background: linear-gradient(to top,
+  rgb(62, 75, 6), transparent);
+}
+#watch {
+  background: linear-gradient(to top,
+  rgb(38, 21, 192), transparent);
+}
+#kids {
+  background: linear-gradient(to top,
+  rgb(14, 192, 118), transparent);
+}
+#other {
+  background: linear-gradient(to top,
+  rgb(17, 182, 204), transparent);
+}
+#color h2 {
+  font-size: 30px;
+  /* color: rgb(26, 218, 90);   */
+}
+#lotto h2 {
+  font-size: 30px;
+  /* color: rgb(59, 56, 53); */
+}
+#watch h2 {
+  font-size: 30px;
+  /* color: rgb(238, 137, 5); */
+}
+
+span {
+  display: block;
+  font-size: 14px;
+  color: #fff;
+}
+
+.sns a {
+  color: #fff;
+}

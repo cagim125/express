@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>게시물 작성폼</title>
+</head>
+
+<style>
+    .layout {
+        width: 500px;
+        margin: 0 auto;
+        margin-top: 40px;
+    }
+
+    .layout>form>input,
+    textarea {
+        width: 100%;
+        box-sizing: border-box;
+        margin-top: 5px;
+    }
+
+    .layout>form>textarea {
+        min-height: 200px;
+    }
+</style>
+
+<body>
+    <div class="layout">
+        <form action="/board/write_process" method="post">
+            <input type="text" name="title">
+            <textarea name="content"></textarea>
+            <button value="button">글작성</button>
+        </form>
+    </div>
+</body>
+
+</html>
